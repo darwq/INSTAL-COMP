@@ -87,15 +87,6 @@ main.container{
     background-color: rgba(0,0,0,0.5);
 }
 
-.main .text .buttons{
-    display: none;
-    gap: 2em;
-    margin-top: 4em;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .main .text .paragraph{
     margin-top: 2em;
     font-size: 1.7rem;
@@ -666,7 +657,12 @@ main.container{
     .nav .header{
         font-size: 1.4rem;
     }
-
+    
+    main.container{
+        min-height: 100vh;
+        padding: 1em;
+        gap: 0;
+    }
 }
 
 @media (max-width: 300px){
