@@ -1,0 +1,676 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #082D53;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV SECTION */
+
+.nav{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav .header{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.nav .log-options{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.btn{
+    padding: 1em 3em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.btn.log-in{
+    background-color: #256D85;
+    border-radius: 3px;
+}
+
+/* MAIN SECTION */
+
+main.container{
+    min-height: 75vh;
+    margin-top: 2em;
+}
+
+.main{
+    background-image: url("https://wallpapercave.com/wp/wp4722771.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+    color: #fff;
+}
+
+.main .text{
+    padding: 3em;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.main .text .buttons{
+    display: none;
+    gap: 2em;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main .text .paragraph{
+    margin-top: 2em;
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+.main .text .buttons .sign-up{
+    background-color: var(--bg-color);
+    border-radius: 3px;
+}
+
+.main .text .header{
+    font-size: 3rem;
+}
+
+.main .more a{
+    font-size: 1.5rem;
+    animation: arrow-move 1s linear infinite;
+    text-decoration: none;
+}
+
+.main .more a.dark{
+    color: var(--bg-color);
+}
+
+.main .more a.light{
+    color: #256D85;
+}
+
+/* TRAITS */
+
+.traits{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3em;
+}
+
+.traits .trait{
+    width: 550px;
+    height: 250px;
+    border-radius: 3px;
+    background-color:#051b31;
+    padding: 2em;
+    color: #fff;
+}
+
+.traits .trait .title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+.traits .trait .title-section .icon{
+    width: 50px;
+    height: 50px;
+    filter: contrast(200%);
+}
+
+.traits .trait .title-section .title{
+    font-size: 1.7rem;
+}
+
+.traits .trait .content{
+    line-height: 2;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    min-height: 25vh;
+    background-color: var(--bg-color);
+    margin-top: auto;
+}
+
+.footer-header{
+    width: 100%;
+    min-height: 75px;
+    background-image: url("https://demo.bosathemes.com/plumbero/wp-content/uploads/sites/30/2022/06/plumbero-img45.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 15%);
+    padding: 1em;
+}
+
+.footer-header .contact{
+    width: 75%;
+    min-height: 75px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+}
+
+.footer-header .contact .element{
+    width: 400px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.footer-header .contact .element i{
+    font-size: 1.5rem;
+}
+
+.footer-header .contact .element .text .redirect{
+    font-weight: 500;
+}
+
+.details{
+    width: 75%;
+    margin: 4em auto;
+    text-align: center;
+    color: #fff;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.details .links{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.details .links .header{
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.details .links .header::before{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 5px;
+    width: 50px;
+    background-color: #051b31;
+}
+
+.details .links .link{
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.1s ease-in;
+}
+
+.details .links .link:hover{
+    transform: translateX(10px);
+}
+
+.details .euid{
+    width: 75%;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-top: 1px solid #051b31;
+    padding: 1em 0;
+    user-select: none;
+}
+
+/* CAREER MAIN */
+
+.career{
+    background-image: url("https://oppel.ca/wp-content/uploads/2020/02/Home-Page.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+}
+
+.career .header{
+    color: #fff;
+    font-size: 5rem;
+    animation: opacity-high 1.2s ease-in;
+}
+
+.career .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 27, 49,0.5);
+    z-index: -1;
+}
+
+.employment-section{
+    min-height: 100vh;
+    padding: 3em;
+}
+
+.employment-section .requirements{
+    width: 1250px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    gap: 2em;
+}
+
+.employment-section .requirements .first-side{
+    width: 35%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.employment-section .requirements .second-side{
+    width: 65%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.employment-section .requirements .requirement{
+    width: 100%;
+    border-radius: 10px;
+    min-height: 250px;
+    background-color: #F8F8F8;
+    padding: 2em;
+}
+
+.requirement .heading{
+    width: 100%;
+    background-color: #FFE9AE;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.requirement .heading .header{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.requirement .criterias{
+    list-style-position: inside;
+    list-style-type: "- ";
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.requirement{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.requirement.faq .questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.requirement.faq .questions .question{
+    width: 100%;
+    max-height: 55px;
+    overflow: hidden;
+    padding: 1em;
+    box-shadow: 0 0 5px #d9d8d8;
+    transition: max-height 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.requirement.faq .questions .question .header{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.requirement.faq .questions .question.open{
+    max-height: 200px;
+}
+
+.requirement.faq .questions .question .question-title i{
+    transition: transform 0.3s ease-in;
+}
+
+.requirement.faq .questions .question.open .question-title i{
+    transform: rotateZ(180deg);
+}
+
+.requirement.faq .questions .question .question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.requirement.cv{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.requirement.cv .contact-link{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.employment-section .second-side .job{
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 25px;
+    background-image: url("../assets//career-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.employment-section .second-side .requests{
+    width: 100%;
+    min-height: 75px;
+    border-radius: 25px 25px 0 0;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.employment-section .second-side .requests .request{
+    color: #fff;
+    padding: 0 2em;
+    border-right: 1px solid #fff;
+}
+
+.employment-section .second-side .requests .request:last-child{
+    border: none;
+}
+
+.employment-section .second-side .requests .request h3{
+    font-size: .9rem;
+}
+
+.employment-section .second-side .requests .request h2{
+    font-size: 1rem;
+}
+
+.employment-section .second-side .more-about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.employment-section .second-side .more-about .sections{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.employment-section .second-side .more-about .sections .section{
+    padding:1em;
+    cursor: pointer;
+}
+
+.employment-section .second-side .more-about .sections .section.selected{
+    border: 1px solid rgb(198, 195, 195);
+    border-bottom: 1px solid #fff;
+    transform: translateY(1px);
+}
+
+
+.employment-section .second-side .more-about .sections .section .header{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.employment-section .second-side .more-about .details{
+    width: 100%;
+    border: 1px solid rgb(198, 195, 195);
+    margin: 0;
+    padding: 2em;
+    color: #585858;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.employment-section .second-side .more-about .details .title{
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.first-section,.second-section,.third-section{
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.first-section.selected{
+    display: flex;
+}
+
+.second-section.selected{
+    display: flex;
+}
+
+.third-section.selected{
+    display: flex;
+}
+
+@keyframes opacity-high{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes arrow-move{
+    50%{transform: translateY(7px);}
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1350px){
+    .employment-section .requirements{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .employment-section .requirements .first-side{
+        width: 100%;
+    }
+
+    .employment-section .requirements .second-side{
+        width: 100%;
+    }
+}
+
+@media (max-width: 765px){
+    .nav .log-options{
+        display: none;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .main .text{
+        margin-top: 4em;
+    }
+
+    .main{
+        padding: 7em 2em;
+    }
+
+    .main .text .header{
+        font-size: 2.5rem;
+    }
+
+    .main .text .buttons{
+        display: flex;
+    }
+
+    .main .text{
+        padding: 3em 0;
+    }
+
+    .employment-section .second-side .requests{
+        flex-direction: column;
+        gap: 1em;
+        height: 50vh;
+        border-radius: 25px;
+    }
+
+    .employment-section .second-side .requests .request{
+        padding: 0;
+        border: none;
+    }
+
+    .employment-section .second-side .job{
+        background-image: none;
+    }
+
+    .traits .trait .header{
+        font-size: 1.5rem;
+    }
+
+    .details .euid{
+        width: 90%;
+    }
+
+    .traits{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .traits .trait{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .main .text{
+        background-color: transparent;
+    }
+
+    .nav .header{
+        text-align: center;
+    }
+
+    .footer-header .contact{
+        width: 100%;
+    }
+
+    .footer-header .contact .element i{
+        font-size: 1.2rem;
+    }
+
+    .footer-header .contact .element .text .detail{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .details{
+        width: 100%;
+        padding: 0 2em;
+    }
+
+    .career .header{
+        font-size: 3rem;
+    }
+
+    .employment-section{
+        padding: 1em;
+    }
+
+    .employment-section .requirements{
+        width: 100%;
+    }
+
+    .employment-section .first-side{
+        gap: 3em;
+    }
+
+    .traits{
+        padding: 1em;
+    }
+
+}
+
+@media (max-width: 300px){
+    .main .text .header{
+        font-size: 2rem;
+    }
+
+    .main .text .paragraph{
+        font-size: 1.5rem;
+    }
+}
