@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-const appTitle = "SCM INSTAL COMP SRL";
+const appTitle = "SCM INSTAL COMP SRL - INSTALATII INDUSTRIALE";
 
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static(path.join(__dirname,"public")));

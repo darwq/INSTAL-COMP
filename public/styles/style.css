@@ -491,6 +491,16 @@ main.container{
     overflow-y: auto;
 }
 
+.detail > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.detail > a:hover{
+    text-decoration: underline;
+}
+
+
 .employment-section .second-side .more-about .details .title{
     color: #000;
     font-weight: bold;
